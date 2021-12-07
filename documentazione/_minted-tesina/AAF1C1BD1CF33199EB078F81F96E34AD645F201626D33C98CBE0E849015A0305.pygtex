@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-docker run
-\PYGZhy{}p \PYG{l+m}{6060}:27017
-\PYGZhy{}d mongo
-\end{Verbatim}

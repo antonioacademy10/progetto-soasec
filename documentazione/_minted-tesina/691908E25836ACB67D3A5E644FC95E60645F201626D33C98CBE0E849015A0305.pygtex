@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-docker run
-\PYGZhy{}p \PYG{l+m}{49160}:8080
-\PYGZhy{}d soasec/nodejs\PYGZhy{}application
-\end{Verbatim}

@@ -1,5 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k+kd}{const} \PYG{n+nx}{keycloak} \PYG{o}{=} \PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}./Keycloak/}
-\PYG{l+s+s1}{    keycloak\PYGZhy{}config.js\PYGZsq{}}\PYG{p}{).}\PYG{n+nx}{getKeycloak}\PYG{p}{();}
-\PYG{n+nx}{app}\PYG{p}{.}\PYG{n+nx}{use}\PYG{p}{(}\PYG{n+nx}{keycloak}\PYG{p}{.}\PYG{n+nx}{middleware}\PYG{p}{());}
-\end{Verbatim}
