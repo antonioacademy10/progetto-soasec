@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZob{}}
+  \PYG{n+nt}{\PYGZdq{}...\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}...\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nt}{\PYGZdq{}token\PYGZus{}endpoint\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}http://base\PYGZus{}url:port/auth/realms}
+\PYG{l+s+s2}{  /REALM/protocol/openid\PYGZhy{}connect/token\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nt}{\PYGZdq{}...\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}...\PYGZdq{}}\PYG{p}{,}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

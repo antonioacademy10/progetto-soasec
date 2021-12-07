@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{var} \PYG{n+nx}{express} \PYG{o}{=} \PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}express\PYGZsq{}}\PYG{p}{);}
+\PYG{k+kd}{var} \PYG{n+nx}{router} \PYG{o}{=} \PYG{n+nx}{express}\PYG{p}{.}\PYG{n+nx}{Router}\PYG{p}{();}
+\PYG{k+kd}{var} \PYG{n+nx}{Candidato} \PYG{o}{=} \PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}../Model/candidato\PYGZhy{}model.js\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n+nx}{router}\PYG{p}{.}\PYG{n+nx}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}/creazione\PYGZhy{}nuovo\PYGZhy{}candidato\PYGZsq{}}\PYG{p}{,}
+    \PYG{k+kd}{function}\PYG{p}{(}\PYG{n+nx}{req}\PYG{p}{,} \PYG{n+nx}{res}\PYG{p}{)\PYGZob{}}
+        \PYG{k}{try} \PYG{p}{\PYGZob{}}
+            \PYG{k+kd}{const} \PYG{n+nx}{nuovoCandidato} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{Candidato}\PYG{p}{(\PYGZob{}}
+                \PYG{l+s+s1}{\PYGZsq{}nome\PYGZsq{}}\PYG{o}{:} \PYG{n+nx}{req}\PYG{p}{.}\PYG{n+nx}{body}\PYG{p}{.}\PYG{n+nx}{nome}\PYG{p}{,}
+                \PYG{l+s+s1}{\PYGZsq{}cognome\PYGZsq{}}\PYG{o}{:} \PYG{n+nx}{req}\PYG{p}{.}\PYG{n+nx}{body}\PYG{p}{.}\PYG{n+nx}{cognome}\PYG{p}{,}
+                \PYG{l+s+s1}{\PYGZsq{}votanti\PYGZsq{}}\PYG{o}{:} \PYG{p}{[]}
+            \PYG{p}{\PYGZcb{});}
+            \PYG{k}{await} \PYG{n+nx}{nuovoCandidato}\PYG{p}{.}\PYG{n+nx}{save}\PYG{p}{();}
+            \PYG{n+nx}{res}\PYG{p}{.}\PYG{n+nx}{send}\PYG{p}{(}
+                \PYG{p}{\PYGZob{}}
+                    \PYG{l+s+s2}{\PYGZdq{}error\PYGZdq{}}\PYG{o}{:}\PYG{l+s+s2}{\PYGZdq{}false\PYGZdq{}}\PYG{p}{,}
+                    \PYG{l+s+s2}{\PYGZdq{}message\PYGZdq{}}\PYG{o}{:}\PYG{l+s+s2}{\PYGZdq{}candidato}
+\PYG{l+s+s2}{                     creato correttamente\PYGZdq{}}
+                \PYG{p}{\PYGZcb{}}
+            \PYG{p}{)}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{catch} \PYG{p}{(}\PYG{n+nx}{err}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+          \PYG{n+nx}{res}\PYG{p}{.}\PYG{n+nx}{status}\PYG{p}{(}\PYG{l+m+mf}{500}\PYG{p}{).}\PYG{n+nx}{send}\PYG{p}{(}\PYG{n+nx}{err}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{);}
+
+\PYG{n+nx}{module}\PYG{p}{.}\PYG{n+nx}{exports} \PYG{o}{=} \PYG{n+nx}{router}\PYG{p}{;}
+\end{Verbatim}

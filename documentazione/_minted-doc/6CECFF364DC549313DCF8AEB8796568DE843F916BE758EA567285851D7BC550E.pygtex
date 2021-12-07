@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{var} \PYG{n+nx}{session} \PYG{o}{=} \PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}express\PYGZhy{}session\PYGZsq{}}\PYG{p}{);}
+\PYG{k+kd}{var} \PYG{n+nx}{Keycloak} \PYG{o}{=} \PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}keycloak\PYGZhy{}connect\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}

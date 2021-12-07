@@ -1,0 +1,19 @@
+{
+  "name": "progetto-soasec",
+  "version": "1.0.0",
+  "description": "Progetto SOASEC applicazione costituita da differenti componenti: NodeJS (Back-End), MongoDB (DB NoSQL), Keycloak (Authentication+Authorization), Flutter (Front-End)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Antonio Elefante, Alfonso D'Auria, Salvatore Ambrosio",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "keycloak-connect": "^15.0.2",
+    "mongoose": "^6.0.14",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nx}{app}\PYG{p}{.}\PYG{n+nx}{use}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}/anonymous\PYGZsq{}}\PYG{p}{,} \PYG{n+nx}{anonymous\PYGZus{}routes}\PYG{p}{);}
+\PYG{n+nx}{app}\PYG{p}{.}\PYG{n+nx}{use}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}/user\PYGZsq{}}\PYG{p}{,} \PYG{n+nx}{keycloak}\PYG{p}{.}\PYG{n+nx}{protect}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}user\PYGZdq{}}\PYG{p}{),}\PYG{n+nx}{user\PYGZus{}routes}\PYG{p}{);}
+\PYG{n+nx}{app}\PYG{p}{.}\PYG{n+nx}{use}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}/admin\PYGZsq{}}\PYG{p}{,} \PYG{n+nx}{keycloak}\PYG{p}{.}\PYG{n+nx}{protect}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}admin\PYGZdq{}}\PYG{p}{),}
+    \PYG{n+nx}{admin\PYGZus{}routes}\PYG{p}{);}
+\end{Verbatim}

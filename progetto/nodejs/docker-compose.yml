@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+  keycloak:
+    image: antonioelefante10/keycloak
+    ports:
+      - 6060:8080
+  node:
+    restart: always
+    build: .
+    ports:
+      - 8080:3000
+    links:
+      - mongodb
+      - keycloak
+    depends_on:
+      - mongodb
+      - keycloak
