@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "Antonio Elefante, Alfonso D'Auria, Salvatore Ambrosio",
+  "author": "Antonio Elefante, Salvatore Ambrosio",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
