@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{let} \PYG{n+nx}{\PYGZus{}keycloak}\PYG{p}{;}
+\PYG{k+kd}{function} \PYG{n+nx}{getKeycloak}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n+nx}{\PYGZus{}keycloak}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Keycloak già inizializzato\PYGZdq{}}\PYG{p}{);}
+        \PYG{k}{return} \PYG{n+nx}{\PYGZus{}keycloak}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{else} \PYG{p}{\PYGZob{}}
+        \PYG{n+nx}{console}\PYG{p}{.}\PYG{n+nx}{log}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Inizializzazione}
+\PYG{l+s+s2}{            connessione al server Keycloak...\PYGZdq{}}\PYG{p}{);}
+        \PYG{k+kd}{var} \PYG{n+nx}{memoryStore} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{session}\PYG{p}{.}\PYG{n+nx}{MemoryStore}\PYG{p}{();}
+        \PYG{n+nx}{\PYGZus{}keycloak} \PYG{o}{=} \PYG{k}{new} \PYG{n+nx}{Keycloak}\PYG{p}{(}
+        \PYG{p}{\PYGZob{}}
+            \PYG{n+nx}{store}\PYG{o}{:} \PYG{n+nx}{memoryStore}
+        \PYG{p}{\PYGZcb{},} \PYG{n+nx}{keycloakConfig}\PYG{p}{);}
+        \PYG{k}{return} \PYG{n+nx}{\PYGZus{}keycloak}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

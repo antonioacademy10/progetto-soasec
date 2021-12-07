@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZob{}}
+  \PYG{n+nt}{\PYGZdq{}name\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}progetto\PYGZhy{}soasec\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nt}{\PYGZdq{}version\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}1.0.0\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nt}{\PYGZdq{}description\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Progetto SOASEC:}
+\PYG{l+s+s2}{  NodeJS (Back\PYGZhy{}End),}
+\PYG{l+s+s2}{  MongoDB (DB NoSQL),}
+\PYG{l+s+s2}{  Keycloak (Authentication+Authorization),}
+\PYG{l+s+s2}{  Flutter (Front\PYGZhy{}End)\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nt}{\PYGZdq{}main\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}index.js\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nt}{\PYGZdq{}scripts\PYGZdq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{n+nt}{\PYGZdq{}start\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}nodemon index.js\PYGZdq{}}
+  \PYG{p}{\PYGZcb{},}
+  \PYG{n+nt}{\PYGZdq{}author\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Antonio Elefante, Salvatore Ambrosio\PYGZdq{}}\PYG{p}{,}
+  \PYG{n+nt}{\PYGZdq{}license\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}ISC\PYGZdq{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

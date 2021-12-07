@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{var} \PYG{n+nx}{mongoose} \PYG{o}{=} \PYG{n+nx}{require}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}mongoose\PYGZsq{}}\PYG{p}{);}
+\PYG{k+kd}{var} \PYG{n+nx}{mongoDB} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}mongodb://base\PYGZus{}url/database\PYGZsq{}}\PYG{p}{;}
+\PYG{n+nx}{mongoose}\PYG{p}{.}\PYG{n+nx}{connect}\PYG{p}{(}\PYG{n+nx}{mongoDB}\PYG{p}{,}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n+nx}{useNewUrlParser}\PYG{o}{:} \PYG{k+kc}{true}\PYG{p}{,}
+        \PYG{n+nx}{useUnifiedTopology}\PYG{o}{:} \PYG{k+kc}{true}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{);}
+\end{Verbatim}

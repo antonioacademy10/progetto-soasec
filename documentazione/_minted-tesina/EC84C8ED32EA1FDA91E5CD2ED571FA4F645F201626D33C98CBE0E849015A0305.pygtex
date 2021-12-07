@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+docker build .
+\PYGZhy{}t soasec/nodejs\PYGZhy{}application
+\end{Verbatim}

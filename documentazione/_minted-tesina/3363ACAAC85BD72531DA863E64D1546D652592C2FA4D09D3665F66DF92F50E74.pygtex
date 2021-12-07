@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{p}{\PYGZob{}}
+        \PYG{n+nt}{\PYGZdq{}name1\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}value1\PYGZdq{}}\PYG{p}{,}
+        \PYG{n+nt}{\PYGZdq{}name2\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}value2\PYGZdq{}}
+    \PYG{p}{\PYGZcb{}}
+\end{Verbatim}
