@@ -39,7 +39,7 @@ Per far ciò quindi bisognerà:
 
 e successivamente
 
-> docker-compose --build up
+> docker-compose up --build
 
 Tale comando sfrutterà quindi la configurazione presente nel file docker-compose.yaml al fine di scaricare le dipendenze necessarie per il corretto funzionamento del tutto.
 
