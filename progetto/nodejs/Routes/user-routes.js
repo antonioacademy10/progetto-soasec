@@ -7,14 +7,14 @@ const Candidato = require('../Model/candidato-model.js')
 
 const keycloak = require("../Keycloak/keycloak-config").getKeycloak();
 
-router.get('/vota/:id', 
+router.patch('/vota/:id', 
 	async function(req, res){ 
 		try {
 			let id = req.params.id;
 			console.log("votando: " + id);
 			let username = req.kauth.grant.access_token.content.preferred_username;
 			let candidato = await Candidato.findById(id);
-			await Candidato.update({ _id: id },{ $addToSet: { votanti: username } });
+			await Candidato.updateOne({ _id: id },{ $addToSet: { votanti: username } });
 
 			await candidato.save();
 			res.send(

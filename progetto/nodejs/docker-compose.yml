@@ -2,18 +2,23 @@ version: '3'
 services:
   mongodb:
     image: mongo
+    ports:
+      - 6060:27017
   keycloak:
     image: antonioelefante10/keycloak
+    environment:
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
     ports:
-      - 6060:8080
+      - 8080:8080
   node:
     restart: always
     build: .
     ports:
-      - 8080:3000
+      - 3050:3050
     links:
-      - mongodb
-      - keycloak
+      - "mongodb:mongodb"
+      - "keycloak:localhost"
     depends_on:
       - mongodb
       - keycloak

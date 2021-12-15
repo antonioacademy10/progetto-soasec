@@ -37,9 +37,7 @@ app.use('/anonymous', anonymous_routes);
 app.use('/user', keycloak.protect("user"),user_routes);
 app.use('/admin', keycloak.protect("admin"),admin_routes);
 
-
-
-app.listen(3000);
+app.listen(3050);
 
 
 

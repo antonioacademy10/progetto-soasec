@@ -111,7 +111,7 @@ class Controller {
         contentType: Headers.jsonContentType,
         validateStatus: (_) => true,
         headers: {"Authorization": "Bearer" + " " + (user?.token ?? " ")});
-    final response = await dio.get(APIHelper.cancella_candidato(id_candidato: id_candidato), options: options);
+    final response = await dio.delete(APIHelper.cancella_candidato(id_candidato: id_candidato), options: options);
 
     if (response.statusCode != 200) {
       return ResponseData(
@@ -142,7 +142,7 @@ class Controller {
         contentType: Headers.jsonContentType,
         validateStatus: (_) => true,
         headers: {"Authorization": "Bearer" + " " + (this.user?.token ?? " ")});
-    final response = await dio.get(APIHelper.vota_candidato(id_candidato: id_candidato), options: options);
+    final response = await dio.patch(APIHelper.vota_candidato(id_candidato: id_candidato), options: options);
 
     if (response.statusCode != 200) {
       return ResponseData(

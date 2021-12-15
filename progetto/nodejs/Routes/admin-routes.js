@@ -7,7 +7,6 @@ router.post('/creazione-nuovo-candidato',
     async function(req, res) {
         try {
         	console.log("creazione nuovo candidato");
-
         	let username = req.kauth.grant.access_token.content.preferred_username;
             const nuovoCandidato = new Candidato({
                 'nome': req.body.nome,
@@ -33,7 +32,7 @@ router.post('/creazione-nuovo-candidato',
     }
 );
 
-router.get('/cancella-candidato/:id', 
+router.delete('/cancella-candidato/:id', 
     async function(req, res) {
         try {
         	let id = req.params.id;
