@@ -55,7 +55,7 @@ Per quanto riguarda gli endpoint esposti dal server NodeJS invece:
 
 | URL Path  | HTTP Request Type | Role |
 | ------------- | ------------- | ---------- |
-| [/anonymous/lista-candidati](http://localhost:3050/anonymous/lista-candidati)  | GET |  |
+| /anonymous/lista-candidati  | GET |  |
 | /user/vota/:id  | PATCH | User  |
 | /admin/creazione-nuovo-candidato  | POST | Admin  |
 | /admin/cancella-candidato/:id  | DELETE | Admin  |
